@@ -5,9 +5,9 @@ import { FaBabyCarriage, FaBookOpen, FaHeart, FaHome, FaLeaf, FaUsers } from "re
 export default function ValeursPage() {
   return (
     <>
-      <section className="py-16 container mx-auto section-container">
+      <section className="py-16 container mx-auto section-container !px-0">
         <div className="pb-12">
-          <h1 className="text-5xl font-extrabold text-center mb-6 text-primary">Nos Valeurs</h1>
+          <h1 className="text-5xl font-extrabold text-center mb-6 text-primary">Le projet</h1>
           <h2 className="text-2xl text-center mb-4 text-muted-foreground">Être... Une base pour se construire</h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">
             Chez Pitaya, nous créons un environnement chaleureux et stimulant où chaque enfant peut s'épanouir à son
@@ -15,9 +15,9 @@ export default function ValeursPage() {
           </p>
         </div>
 
-        <div className="space-y-24 section-container">
+        <div className="space-y-24 section-container !p-0">
           {/* Section 2: Une micro-crèche sociale */}
-          <section className="bg-gradient-to-b from-[#f0e5d8] to-[#d9c6b2] rounded-3xl overflow-hidden">
+          <section className="bg-gradient-to-b from-[#f0e5d8] to-[#d9c6b2]  overflow-hidden">
             <div className="grid md:grid-cols-2 grid-cols-1">
               <div className="relative h-[400px] md:h-auto">
                 <Image src="/slider/home/3.jpg" alt="Micro-crèche sociale" className="object-cover" fill priority />
@@ -64,7 +64,7 @@ export default function ValeursPage() {
           </section>
 
           {/* Section 1: Le projet pédagogique */}
-          <div>
+          <div className="section-container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-primary">Le projet pédagogique Pitaya</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ export default function ValeursPage() {
           </div>
 
           {/* Section 3: Une communauté d'apprentissage */}
-          <div>
+          <div className="section-container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-primary">Une véritable communauté d'apprentissage</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">

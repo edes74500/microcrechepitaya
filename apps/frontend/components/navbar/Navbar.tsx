@@ -48,8 +48,8 @@ export default function Navbar() {
           <Link href="/equipe" className={linksCss}>
             L'équipe
           </Link>
-          <Link href="/valeurs" className={linksCss}>
-            Nos valeurs
+          <Link href="/projet" className={linksCss}>
+            Le projet
           </Link>
 
           <Link href="/contact" className={linksCss}>
@@ -102,8 +102,8 @@ export default function Navbar() {
                 L'équipe
               </Link>
 
-              <Link href="/valeurs" className="text-xl" onClick={toggleMenu}>
-                Nos valeurs
+              <Link href="/projet" className="text-xl" onClick={toggleMenu}>
+                Le projet
               </Link>
 
               <Link href="/contact" className="text-xl" onClick={toggleMenu}>
