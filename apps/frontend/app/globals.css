@@ -41,6 +41,8 @@
 
   /* Rayon des bordures */
   --radius: 0.5rem;
+
+  --max-width: 1200px;
 }
 
 .dark {
@@ -68,6 +70,7 @@
   --chart-3: hsl(75, 50%, 60%);
   --chart-4: hsl(45, 80%, 70%);
   --chart-5: hsl(30, 70%, 60%);
+  --max-width: 1100px;
 }
 
 @theme inline {
@@ -95,7 +98,6 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-radius: var(--radius);
 }
 
 @layer base {
@@ -104,5 +106,17 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .section-container {
+    @apply mx-auto max-w-[var(--max-width)] px-4;
+  }
+
+  .navbar-container {
+    @apply flex justify-center items-center px-4 py-2 h-16 text-primary-foreground w-full bg-muted;
+  }
+
+  .navbar {
+    @apply flex items-center justify-between px-4 py-2 h-16 text-primary w-full max-w-[var(--max-width)];
   }
 }
