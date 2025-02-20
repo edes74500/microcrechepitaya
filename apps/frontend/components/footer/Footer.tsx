@@ -3,7 +3,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter
 
 export default function Footer() {
   return (
-    <footer className="bg-muted text-muted-foreground py-6 border-t-2 border-gray-300">
+    <footer className="bg-muted text-muted-foreground py-6 border-t-1 border-gray-300">
       <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">

@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar-container">
+    <nav className="navbar-container !bg-muted border-b-1 border-gray-300">
       <div className="navbar">
         {/* Logo à gauche */}
         <div className="flex items-center">
@@ -45,12 +45,13 @@ export default function Navbar() {
 
         {/* Navigation à droite */}
         <div className="hidden md:flex items-center gap-6">
-          <Link href="/about" className={linksCss}>
-            À propos
+          <Link href="/equipe" className={linksCss}>
+            L'équipe
           </Link>
-          <Link href="/services" className={linksCss}>
-            Nos services
+          <Link href="/valeurs" className={linksCss}>
+            Nos valeurs
           </Link>
+
           <Link href="/contact" className={linksCss}>
             Contact
           </Link>
@@ -98,12 +99,12 @@ export default function Navbar() {
             </div>
 
             <div className="flex-col flex text-center items-center justify-center flex-grow gap-4">
-              <Link href="/about" className="text-xl" onClick={toggleMenu}>
-                À propos
+              <Link href="/equipe" className="text-xl" onClick={toggleMenu}>
+                L'équipe
               </Link>
 
-              <Link href="/services" className="text-xl" onClick={toggleMenu}>
-                Nos services
+              <Link href="/valeurs" className="text-xl" onClick={toggleMenu}>
+                Nos valeurs
               </Link>
 
               <Link href="/contact" className="text-xl" onClick={toggleMenu}>

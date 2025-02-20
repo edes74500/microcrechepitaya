@@ -13,7 +13,7 @@ export default function Home() {
       <section className="py-16 section-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Bienvenue à la Micro-Crèche Pitaya</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto ">
             Un lieu d'accueil chaleureux et bienveillant pour les tout-petits, où chaque enfant peut s'épanouir dans un
             environnement adapté à ses besoins.
           </p>
@@ -46,9 +46,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-gray-200 to-gray-400 grid md:grid-cols-2 grid-cols-1">
-        <div className="flex items-center justify-center">
-          <Image src="/slider/home/2.jpg" alt="Image de crèche" className=" w-full h-auto" width={500} height={300} />
+      <section className="bg-gradient-to-b from-[#f0e5d8] to-[#d9c6b2] grid md:grid-cols-2 grid-cols-1 ">
+        <div className="flex items-center justify-center relative h-[500px] overflow-hidden">
+          <Image
+            src="/slider/home/6.jpg"
+            alt="Image de crèche"
+            className=" w-full h-auto object-cover"
+            width={500}
+            height={300}
+          />
         </div>
         <div className="section-container max-w-xl rounded-lg p-8 text-center flex flex-col justify-center py-20">
           <div className="max-w-xl justify-center items-center flex flex-col">

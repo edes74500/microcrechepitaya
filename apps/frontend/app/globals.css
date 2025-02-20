@@ -12,9 +12,11 @@
   --popover-foreground: hsl(210, 15%, 20%);
 
   /* Couleurs principales et secondaires */
-  --primary: hsl(180, 40%, 40%); /* Teal moderne et apaisant */
+  /* --primary: hsl(180, 40%, 40%); Teal moderne et apaisant */
+  --secondary: hsl(35, 30%, 55%); /* Teal moderne et apaisant */
   --primary-foreground: hsl(0, 0%, 100%); /* Texte en blanc sur le primary */
-  --secondary: hsl(210, 30%, 30%); /* Bleu profond, sérieux et professionnel */
+  /* --secondary: hsl(210, 30%, 30%); Bleu profond, sérieux et professionnel */
+  --primary: hsl(180, 40%, 40%); /* Bleu profond, sérieux et professionnel */
   --secondary-foreground: hsl(0, 0%, 100%);
 
   /* Nuances complémentaires */
@@ -58,7 +60,7 @@
   --secondary-foreground: hsl(0, 0%, 95%);
   --muted: hsl(210, 20%, 20%);
   --muted-foreground: hsl(210, 10%, 75%);
-  --accent: hsl(45, 80%, 65%);
+  --accent: hsl(200, 80%, 50%);
   --accent-foreground: hsl(0, 0%, 10%);
   --destructive: hsl(0, 70%, 60%);
   --destructive-foreground: hsl(0, 0%, 95%);
