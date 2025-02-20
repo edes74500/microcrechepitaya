@@ -15,7 +15,7 @@ export default function ValeursPage() {
           </p>
         </div>
 
-        <div className="space-y-24">
+        <div className="space-y-24 section-container">
           {/* Section 2: Une micro-crèche sociale */}
           <section className="bg-gradient-to-b from-[#f0e5d8] to-[#d9c6b2] rounded-3xl overflow-hidden">
             <div className="grid md:grid-cols-2 grid-cols-1">

@@ -16,7 +16,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 section-container">
           <div>
             <div className="space-y-8">
               <Card className="p-6">
