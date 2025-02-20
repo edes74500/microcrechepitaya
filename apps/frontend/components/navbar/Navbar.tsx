@@ -98,7 +98,7 @@ export default function Navbar() {
                   </div>
                 </Link>
               </div>
-              <Link href="/equipe" className="text-xl">
+              <Link href="/equipe" className="text-xl" onClick={toggleMenu}>
                 L'équipe
               </Link>
 
