@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  /* Fond et typographie */
+  --background: hsl(0, 0%, 98%); /* Blanc cassé pour une base lumineuse */
+  --foreground: hsl(210, 15%, 20%); /* Gris foncé neutre pour le texte */
+
+  /* Cartes et popovers */
+  --card: hsl(0, 0%, 100%); /* Blanc pour les cartes */
+  --card-foreground: hsl(210, 15%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 15%, 20%);
+
+  /* Couleurs principales et secondaires */
+  --primary: hsl(180, 40%, 40%); /* Teal moderne et apaisant */
+  --primary-foreground: hsl(0, 0%, 100%); /* Texte en blanc sur le primary */
+  --secondary: hsl(210, 30%, 30%); /* Bleu profond, sérieux et professionnel */
+  --secondary-foreground: hsl(0, 0%, 100%);
+
+  /* Nuances complémentaires */
+  --muted: hsl(210, 20%, 95%); /* Un gris bleuté très clair pour des fonds discrets */
+  --muted-foreground: hsl(210, 10%, 40%);
+
+  /* Accent et alertes */
+  --accent: hsl(45, 80%, 55%); /* Jaune doré pour apporter de la chaleur et de la vitalité */
+  --accent-foreground: hsl(0, 0%, 20%);
+  --destructive: hsl(0, 70%, 50%); /* Rouge maîtrisé pour les alertes et actions destructives */
+  --destructive-foreground: hsl(0, 0%, 100%);
+
+  /* Bordures, inputs et effets */
+  --border: hsl(210, 15%, 85%); /* Gris doux pour délimiter sans alourdir */
+  --input: hsl(210, 15%, 85%);
+  --ring: hsl(180, 40%, 60%); /* Effet de focus sur les éléments interactifs */
+
+  /* Graphiques */
+  --chart-1: hsl(180, 40%, 50%);
+  --chart-2: hsl(210, 40%, 50%);
+  --chart-3: hsl(75, 50%, 50%); /* Une touche de vert pour varier */
+  --chart-4: hsl(45, 80%, 60%);
+  --chart-5: hsl(30, 70%, 50%);
+
+  /* Rayon des bordures */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(210, 15%, 10%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(210, 15%, 15%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(210, 15%, 15%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(180, 40%, 50%);
+  --primary-foreground: hsl(0, 0%, 95%);
+  --secondary: hsl(210, 30%, 40%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(210, 20%, 20%);
+  --muted-foreground: hsl(210, 10%, 75%);
+  --accent: hsl(45, 80%, 65%);
+  --accent-foreground: hsl(0, 0%, 10%);
+  --destructive: hsl(0, 70%, 60%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(210, 15%, 20%);
+  --input: hsl(210, 15%, 20%);
+  --ring: hsl(180, 40%, 70%);
+  --chart-1: hsl(180, 40%, 60%);
+  --chart-2: hsl(210, 40%, 60%);
+  --chart-3: hsl(75, 50%, 60%);
+  --chart-4: hsl(45, 80%, 70%);
+  --chart-5: hsl(30, 70%, 60%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-radius: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
