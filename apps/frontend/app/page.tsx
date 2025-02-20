@@ -50,7 +50,7 @@ export default function Home() {
         <div className="flex items-center justify-center">
           <Image src="/slider/home/2.jpg" alt="Image de crèche" className=" w-full h-auto" width={500} height={300} />
         </div>
-        <div className="section-container max-w-xl rounded-lg p-8 text-center flex flex-col justify-center">
+        <div className="section-container max-w-xl rounded-lg p-8 text-center flex flex-col justify-center py-20">
           <div className="max-w-xl justify-center items-center flex flex-col">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">Vous recherchez une place en crèche ?</h2>
             <p className="mb-6 text-gray-700">
